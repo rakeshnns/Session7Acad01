@@ -1,0 +1,9 @@
+<div>
+  <!-- input for title is having *ngIF so that after clicking button only it willget display-->
+  <input type="text" [(ngModel)] = titledsp  *ngIf = "status">
+  <input type="text" [(ngModel)] = firstname>
+  <input type="text" [(ngModel)] = lastname><br>
+  <!-- span for title is having *ngIF so that after clicking button only it willget display-->
+  <span *ngIf="status">{{titledsp}}</span><span> {{firstname}} {{lastname}}</span><br>
+  <button (click)="onclick()">Show Title</button>
+</div>
